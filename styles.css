@@ -1,0 +1,111 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 332px;
+  margin-top: 46px;
+}
+
+.main__heading {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 33px;
+}
+
+.sub__heading {
+  padding-bottom: 24px;
+}
+
+.vw__logo, .audi__logo {
+  width: 183px;
+  display: grid;
+  justify-self: center;
+}
+
+.vw__logo {
+  padding-top: 15px;
+}
+
+.audi__logo {
+  padding-top: 25px;
+}
+
+.card__container {
+  background-color: #EEEEEE;
+  margin-left: 23px;
+  margin-right: 23px;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  padding-bottom: 24px;
+}
+
+.brand__name {
+  text-align: center;
+}
+
+.view__btn {
+  background-color: #2A4759;
+  color: #fff;
+  padding: 7px 37px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: grid;
+  justify-self: center;
+  margin-top: 16px;
+}
