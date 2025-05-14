@@ -74,8 +74,7 @@ body {
 
 .vw__logo, .audi__logo {
   width: 183px;
-  display: grid;
-  justify-self: center;
+  margin: 0 auto;
 }
 
 .vw__logo {
@@ -102,10 +101,8 @@ body {
 .view__btn {
   background-color: #2A4759;
   color: #fff;
-  padding: 7px 37px;
-  border-radius: 20px;
+  display: block;
+  text-align: center;
   text-decoration: none;
-  display: grid;
-  justify-self: center;
-  margin-top: 16px;
+  margin-top: 10px;
 }
