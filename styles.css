@@ -110,3 +110,34 @@ body {
   text-align: center;
    margin-top: 15px;
 }
+
+/* Make-Model */
+
+.vw__secondary__logo {
+  width: 66px;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.make__model__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.choose__model {
+  margin-top: 26px;
+}
+
+.model__name {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #183B4E;
+  padding: 8px 0;
+}
